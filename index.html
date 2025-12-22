@@ -2,16 +2,26 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>林依靜｜個人網站</title>
+  <title>XXX｜個人履歷網站</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      padding-top: 70px; /* 給固定 navbar 空間 */
+    }
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- 🔹 Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- 🔹 固定 Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">XXX</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -31,43 +41,47 @@
 
 <!-- 🔹 Carousel -->
 <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-
   <div class="carousel-inner">
+
     <div class="carousel-item active">
-      <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="">
+      <img src="images/slide1.jpg" class="d-block w-100">
       <div class="carousel-caption">
-        <h3>歡迎來到我的網站</h3>
-        <p>這是我的個人履歷網站</p>
+        <h3>你好，我是 XXX</h3>
+        <p>學生 / 網頁開發學習者</p>
       </div>
     </div>
 
     <div class="carousel-item">
-      <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="">
+      <img src="images/slide2.jpg" class="d-block w-100">
       <div class="carousel-caption">
-        <h3>關於我</h3>
-        
+        <h3>技能</h3>
+        <p>HTML · CSS · Bootstrap</p>
       </div>
     </div>
 
     <div class="carousel-item">
-      <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="">
+      <img src="images/slide3.jpg" class="d-block w-100">
       <div class="carousel-caption">
-        <h3>我的成就</h3>
+        <h3>作品集</h3>
         <p>GitHub Pages 專案</p>
       </div>
     </div>
+
   </div>
 
   <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
-
   <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
 
-<!-- Bootstrap JS -->
+<div class="container mt-5 text-center">
+  <h2>歡迎來到我的履歷網站</h2>
+  <p>這個網站使用 Bootstrap 與 GitHub Pages 製作</p>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
